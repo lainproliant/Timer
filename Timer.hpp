@@ -9,8 +9,6 @@
 #ifndef __TIMER_HPP
 #define __TIMER_HPP
 
-// LRS-DEBUG: remove this header after completion.
-#include <iostream>
 using namespace std;
 
 /********************************************************************
@@ -171,8 +169,7 @@ template <typename T> bool Timer<T>::update ()
       // For now, let's just reset the timer.
       // Wrapping will occur so rarely in most functions
       // that this should not be a huge problem.
-      
-      cout << "<timer wrapped>" << endl;
+     
       _t0 = tnow;
       _t1 = tnow;
       _tstart = tnow;
@@ -204,21 +201,17 @@ template <typename T> bool Timer<T>::update ()
       // reset the timer deltas and add any error in timing
       // to the error accumulator.  Return True to signify
       // that the designated time has elapsed.
-      
-      cout << "<" << _interval - _terr << ", " << tnow - _t0 << ">" << endl;
 
       if (_interval - _terr > tnow - _t0) {
          _terr = 0;
       } else {
          _terr = (tnow - _t0) - (_interval + _terr);
-         cout << "<timer elapsed with error " << _terr << ">" << endl;
       }
 
       _t1 = tnow;
       _t0 = _t1;
       _frames ++;
 
-      cout << "<timer elapsed>" << endl;
       return true;
 
    } else {

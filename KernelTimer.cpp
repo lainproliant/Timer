@@ -64,8 +64,6 @@ void KernelTimer::sleepyTime () const
    req.tv_sec = twait / SECOND;
    req.tv_nsec = (twait % SECOND) * 1000;
 
-   cout << "<twait = " << twait << ">" << endl;
-
    while (nanosleep (&req, &rem) == -1) {
       memcpy (&req, &rem, sizeof (struct timespec));
    }
