@@ -1,0 +1,148 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CallbackWrapper	Timer.hpp	/^      CallbackWrapper (timer_proc_t proc) {$/;"	f	class:Timer::CallbackWrapper	access:public	signature:(timer_proc_t proc)
+CallbackWrapper	Timer.hpp	/^   class CallbackWrapper : public TimeFunctor {$/;"	c	class:Timer	inherits:TimeFunctor	access:protected
+KernelTimer	KernelTimer.cpp	/^KernelTimer::KernelTimer () : Timer <kernel_timer_t> ($/;"	f	class:KernelTimer	signature:()
+KernelTimer	KernelTimer.hpp	/^   KernelTimer ();$/;"	p	class:KernelTimer	access:public	signature:()
+KernelTimer	KernelTimer.hpp	/^class KernelTimer : public Timer <kernel_timer_t>$/;"	c	inherits:Timer
+KernelTimer::KernelTimer	KernelTimer.cpp	/^KernelTimer::KernelTimer () : Timer <kernel_timer_t> ($/;"	f	class:KernelTimer	signature:()
+KernelTimer::KernelTimer	KernelTimer.hpp	/^   KernelTimer ();$/;"	p	class:KernelTimer	access:public	signature:()
+KernelTimer::KernelTimerCallback	KernelTimer.hpp	/^   class KernelTimerCallback : public Timer <kernel_timer_t>::TimeFunctor {$/;"	c	class:KernelTimer	inherits:Timer::TimeFunctor	access:private
+KernelTimer::KernelTimerCallback::KernelTimerCallback	KernelTimer.cpp	/^KernelTimer::KernelTimerCallback::KernelTimerCallback ()$/;"	f	class:KernelTimer::KernelTimerCallback	signature:()
+KernelTimer::KernelTimerCallback::KernelTimerCallback	KernelTimer.hpp	/^      KernelTimerCallback ();$/;"	p	class:KernelTimer::KernelTimerCallback	access:public	signature:()
+KernelTimer::KernelTimerCallback::_tv	KernelTimer.cpp	/^struct timeval KernelTimer::KernelTimerCallback::_tv;$/;"	m	class:KernelTimer::KernelTimerCallback	typeref:struct:KernelTimer::KernelTimerCallback::	file:
+KernelTimer::KernelTimerCallback::_tv	KernelTimer.hpp	/^      static struct timeval _tv;$/;"	m	class:KernelTimer::KernelTimerCallback	typeref:struct:KernelTimer::KernelTimerCallback::timeval	access:private
+KernelTimer::KernelTimerCallback::operator ()	KernelTimer.cpp	/^kernel_timer_t KernelTimer::KernelTimerCallback::operator() () const {$/;"	f	class:KernelTimer::KernelTimerCallback	signature:() const
+KernelTimer::KernelTimerCallback::operator ()	KernelTimer.hpp	/^      kernel_timer_t operator() () const;$/;"	p	class:KernelTimer::KernelTimerCallback	access:public	signature:() const
+KernelTimer::SECOND	KernelTimer.hpp	/^   static const kernel_timer_t SECOND = 1000000;$/;"	m	class:KernelTimer	access:public
+KernelTimer::sleepyTime	KernelTimer.cpp	/^void KernelTimer::sleepyTime () const$/;"	f	class:KernelTimer	signature:() const
+KernelTimer::sleepyTime	KernelTimer.hpp	/^   void sleepyTime () const;$/;"	p	class:KernelTimer	access:public	signature:() const
+KernelTimerCallback	KernelTimer.cpp	/^KernelTimer::KernelTimerCallback::KernelTimerCallback ()$/;"	f	class:KernelTimer::KernelTimerCallback	signature:()
+KernelTimerCallback	KernelTimer.hpp	/^      KernelTimerCallback ();$/;"	p	class:KernelTimer::KernelTimerCallback	access:public	signature:()
+KernelTimerCallback	KernelTimer.hpp	/^   class KernelTimerCallback : public Timer <kernel_timer_t>::TimeFunctor {$/;"	c	class:KernelTimer	inherits:Timer::TimeFunctor	access:private
+SECOND	KernelTimer.hpp	/^   static const kernel_timer_t SECOND = 1000000;$/;"	m	class:KernelTimer	access:public
+SECOND	TimerSDL.hpp	/^   static const Uint32 SECOND = 1000;$/;"	m	class:TimerSDL	access:public
+TimeFunctor	Timer.hpp	/^   class TimeFunctor {$/;"	c	class:Timer	access:public
+Timer	Timer.hpp	/^   Timer (TimeFunctor* timeFunc);$/;"	p	class:Timer	access:public	signature:(TimeFunctor* timeFunc)
+Timer	Timer.hpp	/^   Timer (timer_proc_t timerProc);$/;"	p	class:Timer	access:public	signature:(timer_proc_t timerProc)
+Timer	Timer.hpp	/^template <typename T> Timer<T>::Timer (Timer<T>::TimeFunctor* timeFunc) : $/;"	f	class:Timer	signature:(Timer<T>::TimeFunctor* timeFunc)
+Timer	Timer.hpp	/^template <typename T> Timer<T>::Timer (Timer<T>::timer_proc_t timerProc) :$/;"	f	class:Timer	signature:(Timer<T>::timer_proc_t timerProc)
+Timer	Timer.hpp	/^template <typename T> class Timer {$/;"	c
+Timer::CallbackWrapper	Timer.hpp	/^   class CallbackWrapper : public TimeFunctor {$/;"	c	class:Timer	inherits:TimeFunctor	access:protected
+Timer::CallbackWrapper::CallbackWrapper	Timer.hpp	/^      CallbackWrapper (timer_proc_t proc) {$/;"	f	class:Timer::CallbackWrapper	access:public	signature:(timer_proc_t proc)
+Timer::CallbackWrapper::_proc	Timer.hpp	/^      timer_proc_t _proc;$/;"	m	class:Timer::CallbackWrapper	access:private
+Timer::CallbackWrapper::operator ()	Timer.hpp	/^      T operator() () const {$/;"	f	class:Timer::CallbackWrapper	access:public	signature:() const
+Timer::TimeFunctor	Timer.hpp	/^   class TimeFunctor {$/;"	c	class:Timer	access:public
+Timer::TimeFunctor::operator ()	Timer.hpp	/^      virtual T operator() () const = 0;$/;"	p	class:Timer::TimeFunctor	access:public	signature:() const
+Timer::Timer	Timer.hpp	/^   Timer (TimeFunctor* timeFunc);$/;"	p	class:Timer	access:public	signature:(TimeFunctor* timeFunc)
+Timer::Timer	Timer.hpp	/^   Timer (timer_proc_t timerProc);$/;"	p	class:Timer	access:public	signature:(timer_proc_t timerProc)
+Timer::Timer	Timer.hpp	/^template <typename T> Timer<T>::Timer (Timer<T>::TimeFunctor* timeFunc) : $/;"	f	class:Timer	signature:(Timer<T>::TimeFunctor* timeFunc)
+Timer::Timer	Timer.hpp	/^template <typename T> Timer<T>::Timer (Timer<T>::timer_proc_t timerProc) :$/;"	f	class:Timer	signature:(Timer<T>::timer_proc_t timerProc)
+Timer::_frames	Timer.hpp	/^   T _interval, _t0, _t1, _terr, _tstart, _frames;$/;"	m	class:Timer	access:private
+Timer::_init	Timer.hpp	/^   void _init ();$/;"	p	class:Timer	access:private	signature:()
+Timer::_init	Timer.hpp	/^template <typename T> void Timer<T>::_init ()$/;"	f	class:Timer	signature:()
+Timer::_interval	Timer.hpp	/^   T _interval, _t0, _t1, _terr, _tstart, _frames;$/;"	m	class:Timer	access:private
+Timer::_paused	Timer.hpp	/^   bool _started, _paused;$/;"	m	class:Timer	access:private
+Timer::_started	Timer.hpp	/^   bool _started, _paused;$/;"	m	class:Timer	access:private
+Timer::_t0	Timer.hpp	/^   T _interval, _t0, _t1, _terr, _tstart, _frames;$/;"	m	class:Timer	access:private
+Timer::_t1	Timer.hpp	/^   T _interval, _t0, _t1, _terr, _tstart, _frames;$/;"	m	class:Timer	access:private
+Timer::_terr	Timer.hpp	/^   T _interval, _t0, _t1, _terr, _tstart, _frames;$/;"	m	class:Timer	access:private
+Timer::_timeFunc	Timer.hpp	/^   TimeFunctor* _timeFunc;$/;"	m	class:Timer	access:private
+Timer::_tstart	Timer.hpp	/^   T _interval, _t0, _t1, _terr, _tstart, _frames;$/;"	m	class:Timer	access:private
+Timer::debugPrint	Timer.hpp	/^   void debugPrint ();$/;"	p	class:Timer	access:public	signature:()
+Timer::debugPrint	Timer.hpp	/^template <typename T> void Timer<T>::debugPrint ()$/;"	f	class:Timer	signature:()
+Timer::elapsed	Timer.hpp	/^   T elapsed () const;$/;"	p	class:Timer	access:public	signature:() const
+Timer::elapsed	Timer.hpp	/^template <typename T> T Timer<T>::elapsed () const$/;"	f	class:Timer	signature:() const
+Timer::getFrames	Timer.hpp	/^   T getFrames () const;$/;"	p	class:Timer	access:public	signature:() const
+Timer::getFrames	Timer.hpp	/^template <typename T> T Timer<T>::getFrames () const$/;"	f	class:Timer	signature:() const
+Timer::getTicks	Timer.hpp	/^   T getTicks () const;$/;"	p	class:Timer	access:public	signature:() const
+Timer::getTicks	Timer.hpp	/^template <typename T> T Timer<T>::getTicks () const$/;"	f	class:Timer	signature:() const
+Timer::notifyListeners	Timer.hpp	/^   void notifyListeners ();$/;"	p	class:Timer	access:protected	signature:()
+Timer::pause	Timer.hpp	/^   void pause ();$/;"	p	class:Timer	access:public	signature:()
+Timer::pause	Timer.hpp	/^template <typename T> void Timer<T>::pause ()$/;"	f	class:Timer	signature:()
+Timer::paused	Timer.hpp	/^   bool paused () const;$/;"	p	class:Timer	access:public	signature:() const
+Timer::paused	Timer.hpp	/^template <typename T> bool Timer<T>::paused () const$/;"	f	class:Timer	signature:() const
+Timer::reset	Timer.hpp	/^   void reset ();$/;"	p	class:Timer	access:public	signature:()
+Timer::reset	Timer.hpp	/^template <typename T> void Timer<T>::reset ()$/;"	f	class:Timer	signature:()
+Timer::resume	Timer.hpp	/^   void resume ();$/;"	p	class:Timer	access:public	signature:()
+Timer::resume	Timer.hpp	/^template <typename T> void Timer<T>::resume ()$/;"	f	class:Timer	signature:()
+Timer::sleepyTime	Timer.hpp	/^   virtual void sleepyTime () const$/;"	f	class:Timer	access:public	signature:() const
+Timer::start	Timer.hpp	/^   void start (T interval);$/;"	p	class:Timer	access:public	signature:(T interval)
+Timer::start	Timer.hpp	/^template <typename T> void Timer<T>::start (T interval)$/;"	f	class:Timer	signature:(T interval)
+Timer::started	Timer.hpp	/^   bool started () const;$/;"	p	class:Timer	access:public	signature:() const
+Timer::started	Timer.hpp	/^template <typename T> bool Timer<T>::started () const$/;"	f	class:Timer	signature:() const
+Timer::stop	Timer.hpp	/^   void stop ();$/;"	p	class:Timer	access:public	signature:()
+Timer::stop	Timer.hpp	/^template <typename T> void Timer<T>::stop ()$/;"	f	class:Timer	signature:()
+Timer::timer_proc_t	Timer.hpp	/^   typedef T (*timer_proc_t) ();$/;"	t	class:Timer	access:public
+Timer::update	Timer.hpp	/^   bool update ();$/;"	p	class:Timer	access:public	signature:()
+Timer::update	Timer.hpp	/^template <typename T> bool Timer<T>::update ()$/;"	f	class:Timer	signature:()
+Timer::waitTime	Timer.hpp	/^   T waitTime () const;$/;"	p	class:Timer	access:public	signature:() const
+Timer::waitTime	Timer.hpp	/^template <typename T> T Timer<T>::waitTime () const$/;"	f	class:Timer	signature:() const
+Timer::~Timer	Timer.hpp	/^   virtual ~Timer ();$/;"	p	class:Timer	access:public	signature:()
+Timer::~Timer	Timer.hpp	/^template <typename T> Timer<T>::~Timer ()$/;"	f	class:Timer	signature:()
+TimerSDL	TimerSDL.hpp	/^   TimerSDL () : Timer <Uint32> (SDL_GetTicks)$/;"	f	class:TimerSDL	access:public	signature:()
+TimerSDL	TimerSDL.hpp	/^class TimerSDL : public Timer <Uint32>$/;"	c	inherits:Timer
+TimerSDL::SECOND	TimerSDL.hpp	/^   static const Uint32 SECOND = 1000;$/;"	m	class:TimerSDL	access:public
+TimerSDL::TimerSDL	TimerSDL.hpp	/^   TimerSDL () : Timer <Uint32> (SDL_GetTicks)$/;"	f	class:TimerSDL	access:public	signature:()
+TimerSDL::sleepyTime	TimerSDL.hpp	/^   void sleepyTime () const {$/;"	f	class:TimerSDL	access:public	signature:() const
+__KERNELTIMER_H	KernelTimer.hpp	/^#define __KERNELTIMER_H$/;"	d
+__TIMERSDL_HPP	TimerSDL.hpp	/^#define __TIMERSDL_HPP$/;"	d
+__TIMER_HPP	Timer.hpp	/^#define __TIMER_HPP$/;"	d
+_frames	Timer.hpp	/^   T _interval, _t0, _t1, _terr, _tstart, _frames;$/;"	m	class:Timer	access:private
+_init	Timer.hpp	/^   void _init ();$/;"	p	class:Timer	access:private	signature:()
+_init	Timer.hpp	/^template <typename T> void Timer<T>::_init ()$/;"	f	class:Timer	signature:()
+_interval	Timer.hpp	/^   T _interval, _t0, _t1, _terr, _tstart, _frames;$/;"	m	class:Timer	access:private
+_paused	Timer.hpp	/^   bool _started, _paused;$/;"	m	class:Timer	access:private
+_proc	Timer.hpp	/^      timer_proc_t _proc;$/;"	m	class:Timer::CallbackWrapper	access:private
+_started	Timer.hpp	/^   bool _started, _paused;$/;"	m	class:Timer	access:private
+_t0	Timer.hpp	/^   T _interval, _t0, _t1, _terr, _tstart, _frames;$/;"	m	class:Timer	access:private
+_t1	Timer.hpp	/^   T _interval, _t0, _t1, _terr, _tstart, _frames;$/;"	m	class:Timer	access:private
+_terr	Timer.hpp	/^   T _interval, _t0, _t1, _terr, _tstart, _frames;$/;"	m	class:Timer	access:private
+_timeFunc	Timer.hpp	/^   TimeFunctor* _timeFunc;$/;"	m	class:Timer	access:private
+_tstart	Timer.hpp	/^   T _interval, _t0, _t1, _terr, _tstart, _frames;$/;"	m	class:Timer	access:private
+_tv	KernelTimer.cpp	/^struct timeval KernelTimer::KernelTimerCallback::_tv;$/;"	m	class:KernelTimer::KernelTimerCallback	typeref:struct:KernelTimer::KernelTimerCallback::	file:
+_tv	KernelTimer.hpp	/^      static struct timeval _tv;$/;"	m	class:KernelTimer::KernelTimerCallback	typeref:struct:KernelTimer::KernelTimerCallback::timeval	access:private
+debugPrint	Timer.hpp	/^   void debugPrint ();$/;"	p	class:Timer	access:public	signature:()
+debugPrint	Timer.hpp	/^template <typename T> void Timer<T>::debugPrint ()$/;"	f	class:Timer	signature:()
+elapsed	Timer.hpp	/^   T elapsed () const;$/;"	p	class:Timer	access:public	signature:() const
+elapsed	Timer.hpp	/^template <typename T> T Timer<T>::elapsed () const$/;"	f	class:Timer	signature:() const
+getFrames	Timer.hpp	/^   T getFrames () const;$/;"	p	class:Timer	access:public	signature:() const
+getFrames	Timer.hpp	/^template <typename T> T Timer<T>::getFrames () const$/;"	f	class:Timer	signature:() const
+getTicks	Timer.hpp	/^   T getTicks () const;$/;"	p	class:Timer	access:public	signature:() const
+getTicks	Timer.hpp	/^template <typename T> T Timer<T>::getTicks () const$/;"	f	class:Timer	signature:() const
+kernel_timer_t	KernelTimer.hpp	/^typedef long long kernel_timer_t;$/;"	t
+main	TimerTest.cpp	/^int main (int argc, char* argv[])$/;"	f	signature:(int argc, char* argv[])
+notifyListeners	Timer.hpp	/^   void notifyListeners ();$/;"	p	class:Timer	access:protected	signature:()
+operator ()	KernelTimer.cpp	/^kernel_timer_t KernelTimer::KernelTimerCallback::operator() () const {$/;"	f	class:KernelTimer::KernelTimerCallback	signature:() const
+operator ()	KernelTimer.hpp	/^      kernel_timer_t operator() () const;$/;"	p	class:KernelTimer::KernelTimerCallback	access:public	signature:() const
+operator ()	Timer.hpp	/^      T operator() () const {$/;"	f	class:Timer::CallbackWrapper	access:public	signature:() const
+operator ()	Timer.hpp	/^      virtual T operator() () const = 0;$/;"	p	class:Timer::TimeFunctor	access:public	signature:() const
+pause	Timer.hpp	/^   void pause ();$/;"	p	class:Timer	access:public	signature:()
+pause	Timer.hpp	/^template <typename T> void Timer<T>::pause ()$/;"	f	class:Timer	signature:()
+paused	Timer.hpp	/^   bool paused () const;$/;"	p	class:Timer	access:public	signature:() const
+paused	Timer.hpp	/^template <typename T> bool Timer<T>::paused () const$/;"	f	class:Timer	signature:() const
+reset	Timer.hpp	/^   void reset ();$/;"	p	class:Timer	access:public	signature:()
+reset	Timer.hpp	/^template <typename T> void Timer<T>::reset ()$/;"	f	class:Timer	signature:()
+resume	Timer.hpp	/^   void resume ();$/;"	p	class:Timer	access:public	signature:()
+resume	Timer.hpp	/^template <typename T> void Timer<T>::resume ()$/;"	f	class:Timer	signature:()
+sleepyTime	KernelTimer.cpp	/^void KernelTimer::sleepyTime () const$/;"	f	class:KernelTimer	signature:() const
+sleepyTime	KernelTimer.hpp	/^   void sleepyTime () const;$/;"	p	class:KernelTimer	access:public	signature:() const
+sleepyTime	Timer.hpp	/^   virtual void sleepyTime () const$/;"	f	class:Timer	access:public	signature:() const
+sleepyTime	TimerSDL.hpp	/^   void sleepyTime () const {$/;"	f	class:TimerSDL	access:public	signature:() const
+start	Timer.hpp	/^   void start (T interval);$/;"	p	class:Timer	access:public	signature:(T interval)
+start	Timer.hpp	/^template <typename T> void Timer<T>::start (T interval)$/;"	f	class:Timer	signature:(T interval)
+started	Timer.hpp	/^   bool started () const;$/;"	p	class:Timer	access:public	signature:() const
+started	Timer.hpp	/^template <typename T> bool Timer<T>::started () const$/;"	f	class:Timer	signature:() const
+stop	Timer.hpp	/^   void stop ();$/;"	p	class:Timer	access:public	signature:()
+stop	Timer.hpp	/^template <typename T> void Timer<T>::stop ()$/;"	f	class:Timer	signature:()
+timer_proc_t	Timer.hpp	/^   typedef T (*timer_proc_t) ();$/;"	t	class:Timer	access:public
+update	Timer.hpp	/^   bool update ();$/;"	p	class:Timer	access:public	signature:()
+update	Timer.hpp	/^template <typename T> bool Timer<T>::update ()$/;"	f	class:Timer	signature:()
+waitTime	Timer.hpp	/^   T waitTime () const;$/;"	p	class:Timer	access:public	signature:() const
+waitTime	Timer.hpp	/^template <typename T> T Timer<T>::waitTime () const$/;"	f	class:Timer	signature:() const
+~Timer	Timer.hpp	/^   virtual ~Timer ();$/;"	p	class:Timer	access:public	signature:()
+~Timer	Timer.hpp	/^template <typename T> Timer<T>::~Timer ()$/;"	f	class:Timer	signature:()

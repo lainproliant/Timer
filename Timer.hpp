@@ -84,6 +84,20 @@ protected:
       timer_proc_t _proc;
    };
 
+   /*
+    * A functor wrapper for a second timer.  The resulting timer's
+    * ticks are relative to the given timer's frames.
+    */
+   class RelativeTimeWrapper : public TimeFunctor {
+   public:
+      const template Timer<T>& referenceTimer;
+
+      RelativeTimeWrapper (const template Timer<T>& timer)
+      T operator() () const {
+         return referenceTimer.getFrames ();
+      }
+   };
+   
 private:
    void _init ();
 
