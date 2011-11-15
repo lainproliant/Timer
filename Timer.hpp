@@ -90,9 +90,12 @@ protected:
     */
    class RelativeTimeWrapper : public TimeFunctor {
    public:
-      const template Timer<T>& referenceTimer;
+      const Timer<T>& referenceTimer;
 
-      RelativeTimeWrapper (const template Timer<T>& timer)
+      RelativeTimeWrapper (const Timer<T>& timer) {
+         referenceTimer = timer;
+      }
+
       T operator() () const {
          return referenceTimer.getFrames ();
       }
@@ -392,19 +395,5 @@ template <typename T> void Timer<T>::reset ()
    _terr = 0;
    _frames = 0;
 }
-
-
-/*
- * LRS-DEBUG: Remove this method.
- */
-template <typename T> void Timer<T>::debugPrint ()
-{
-   cout << "[" << _t0
-        << "," << _t1
-        << "," << _terr
-        << "]" << endl;
-
-}
-
 
 #endif
